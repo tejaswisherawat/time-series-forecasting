@@ -31,13 +31,14 @@ This project explores **time series forecasting techniques** for predicting the 
 
 * Differenced series to achieve stationarity.  
 * Used **ACF/PACF** for lag order identification.  
-* Applied **grid search with AIC** to select the best ARIMA model.  
-* Implemented **rolling forecasts** for adaptiveness.
+* Applied **grid search with AIC** to select the best ARIMA model.
+* Predicted the entire test period at once- obviously preformed abysmally
+* Implemented **rolling forecasts** for adaptiveness - predicts 20 days ahead forecasts- model gets refitted every 20 days with the new actual data
 
 ### 2. LSTM Variants
 
-* **Rolling univariate LSTM (1-day ahead)** → retrained periodically, highly adaptive.  
-* **Univariate LSTM (20-day ahead)** → longer-horizon predictions.  
+* **Rolling univariate LSTM (1-day ahead)** → trained once- retuned every 20 days. predicts one day ahead forecast- the actual value then gets appended to the history- highly adaptive  
+* **Univariate LSTM (20-day ahead)** → trained once- retuned every 40 days. predicts 20 days ahead forecast- the actual value then gets appended to the history- highly adaptive
 * **Static multivariate LSTM** → trained once with additional features (Volume, RSI, MACD).
 
 ---
