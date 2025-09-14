@@ -41,6 +41,10 @@ This project explores **time series forecasting techniques** for predicting the 
 * **Univariate LSTM (20-day ahead)** → trained once- retuned every 40 days. predicts 20 days ahead forecast- the actual value then gets appended to the history- highly adaptive
 * **Static multivariate LSTM** → trained once with additional features (Volume, RSI, MACD).
 
+### 3. Residual Analysis
+
+* Performed residual analysis for all the models discussed above- through distribution plot, histogram and acf plots - along with key summary statistics
+
 ---
 
 ## Results
